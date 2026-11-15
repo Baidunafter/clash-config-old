@@ -1,0 +1,40 @@
+github:
+  owner: Baidunafter
+  repository: clash-config
+  branch: main
+  raw_base: https://raw.githubusercontent.com/Baidunafter/clash-config/refs/heads/main
+  pat_env: CLASH_GITHUB_PAT
+  authorization_scheme: token
+
+sources:
+  roscomvpn_geosite:
+    repository: https://github.com/hydraponique/roscomvpn-geosite.git
+    raw_base: https://raw.githubusercontent.com/hydraponique/roscomvpn-geosite/master/
+    branch: master
+
+  roscomvpn_geoip:
+    repository: https://github.com/hydraponique/roscomvpn-geoip.git
+    raw_base: https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/master/
+    branch: master
+
+  itdog_allow_domains:
+    repository: https://github.com/itdoginfo/allow-domains.git
+    raw_base: https://raw.githubusercontent.com/itdoginfo/allow-domains/main/
+    branch: main
+
+  codelab_ruleset:
+    repository: https://github.com/codelabhq/clash-warp-config.git
+    raw_base: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/
+    branch: main
+
+  # Clash classical rule lists: rule/Clash/<Name>/<Name>.yaml (payload: DOMAIN-SUFFIX,...).
+  # Parsed by the aggregator, so providers never use the wrong `behavior`.
+  blackmatrix7:
+    repository: https://github.com/blackmatrix7/ios_rule_script.git
+    raw_base: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/
+    branch: master
+
+  malw_hosts:
+    repository: https://github.com/ImMALWARE/dns.malw.link.git
+    url: https://raw.githubusercontent.com/ImMALWARE/dns.malw.link/master/hosts
+    branch: master

@@ -1,0 +1,564 @@
+{
+  "direct_overlap": {
+    "block": {
+      "count": 1,
+      "examples": [
+        "showip.net (direct list: showip.net)"
+      ]
+    },
+    "geoblock": {
+      "count": 1,
+      "examples": [
+        "windsurf.com (direct list: windsurf.com)"
+      ]
+    },
+    "torrent": {
+      "count": 1,
+      "examples": [
+        "trun.tom.ru (direct list: tom.ru)"
+      ]
+    }
+  },
+  "target_conflicts": [
+    {
+      "count": 70,
+      "examples": [
+        "ai.com",
+        "ai.studio",
+        "aida.googleapis.com",
+        "aisandbox-pa.googleapis.com",
+        "aitestkitchen.withgoogle.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "ai",
+      "winner_target": "AI"
+    },
+    {
+      "count": 15,
+      "examples": [
+        "1337x.to",
+        "booktracker.org",
+        "filmitorrent.net",
+        "kinozal.me",
+        "nnmclub.to"
+      ],
+      "loser": "block",
+      "loser_target": "Геоблок",
+      "winner": "torrent",
+      "winner_target": "Torrent"
+    },
+    {
+      "count": 14,
+      "examples": [
+        "fast.com",
+        "geolocation.onetrust.com",
+        "netflix.ca",
+        "netflix.com",
+        "netflix.net"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "netflix",
+      "winner_target": "Видео"
+    },
+    {
+      "count": 10,
+      "examples": [
+        "bitbucket.org",
+        "capcutapi.com",
+        "capcutstatic.com",
+        "fastpic.org",
+        "gitlab.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "tools",
+      "winner_target": "Геоблок"
+    },
+    {
+      "count": 8,
+      "examples": [
+        "adobedtm.com",
+        "disneyplus.com",
+        "foxnews.com",
+        "fxnetworks.com",
+        "hbomax.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "streaming",
+      "winner_target": "Видео"
+    },
+    {
+      "count": 7,
+      "examples": [
+        "ai.google.dev",
+        "aistudio.google.com",
+        "bard.google.com",
+        "gemini.google",
+        "gemini.google.com"
+      ],
+      "loser": "ai",
+      "loser_target": "AI",
+      "winner": "gemini",
+      "winner_target": "Gemini"
+    },
+    {
+      "count": 7,
+      "examples": [
+        "ai.google.dev",
+        "aistudio.google.com",
+        "bard.google.com",
+        "gemini.google",
+        "gemini.google.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "gemini",
+      "winner_target": "Gemini"
+    },
+    {
+      "count": 7,
+      "examples": [
+        "amazon.com",
+        "ikea.com",
+        "lenso.ai",
+        "mongodb.com",
+        "pinata.cloud"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "geoblock",
+      "winner_target": "Геоблок"
+    },
+    {
+      "count": 5,
+      "examples": [
+        "appldnld.apple.com",
+        "mesu.apple.com",
+        "swcdn.apple.com",
+        "swdist.apple.com",
+        "swscan.apple.com"
+      ],
+      "loser": "apple",
+      "loser_target": "PROXY",
+      "winner": "bulk-direct",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 4,
+      "examples": [
+        "cdn-lfs-eu-1.hf.co",
+        "cdn-lfs-us-1.hf.co",
+        "cdn-lfs.hf.co",
+        "cdn-lfs.huggingface.co"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "bulk-direct",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 4,
+      "examples": [
+        "chess.com",
+        "chesscomfiles.com",
+        "itch.io",
+        "modrinth.com"
+      ],
+      "loser": "block",
+      "loser_target": "Геоблок",
+      "winner": "games",
+      "winner_target": "Игры"
+    },
+    {
+      "count": 3,
+      "examples": [
+        "api.individual.githubcopilot.com",
+        "githubcopilot.com",
+        "proxy.individual.githubcopilot.com"
+      ],
+      "loser": "github",
+      "loser_target": "Cloudflare",
+      "winner": "ai",
+      "winner_target": "AI"
+    },
+    {
+      "count": 3,
+      "examples": [
+        "copilot.microsoft.com",
+        "edgeservices.bing.com",
+        "sydney.bing.com"
+      ],
+      "loser": "microsoft",
+      "loser_target": "DIRECT",
+      "winner": "ai",
+      "winner_target": "AI"
+    },
+    {
+      "count": 3,
+      "examples": [
+        "ggpht.com",
+        "gvt1.com",
+        "gvt2.com"
+      ],
+      "loser": "youtube",
+      "loser_target": "YouTube",
+      "winner": "google-bulk",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "hetzner.com",
+        "protonvpn.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "block",
+      "winner_target": "Геоблок"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "steamcontent.com",
+        "steamserver.net"
+      ],
+      "loser": "steam",
+      "loser_target": "Игры",
+      "winner": "bulk-direct",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "battle.net",
+        "ubi.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "games",
+      "winner_target": "Игры"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "labs.google",
+        "notebooklm.google"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "google-core",
+      "winner_target": "AI"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "sentry-cdn.com",
+        "sentry.io"
+      ],
+      "loser": "tools",
+      "loser_target": "Геоблок",
+      "winner": "malw-block",
+      "winner_target": "REJECT"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "meta.com",
+        "oculus.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "meta",
+      "winner_target": "Meta"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "rewards.bing.com",
+        "xsts.auth.xboxlive.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "microsoft",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "fast.com",
+        "geolocation.onetrust.com"
+      ],
+      "loser": "tools",
+      "loser_target": "Геоблок",
+      "winner": "netflix",
+      "winner_target": "Видео"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "bbc.co.uk",
+        "foxnews.com"
+      ],
+      "loser": "news",
+      "loser_target": "Геоблок",
+      "winner": "streaming",
+      "winner_target": "Видео"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "adobedtm.com",
+        "bam.nr-data.net"
+      ],
+      "loser": "tools",
+      "loser_target": "Геоблок",
+      "winner": "streaming",
+      "winner_target": "Видео"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "gql.twitch.tv",
+        "usher.ttvnw.net"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "twitch-ads",
+      "winner_target": "Обход качества Twitch"
+    },
+    {
+      "count": 2,
+      "examples": [
+        "gql.twitch.tv",
+        "usher.ttvnw.net"
+      ],
+      "loser": "twitch",
+      "loser_target": "DIRECT",
+      "winner": "twitch-ads",
+      "winner_target": "Обход качества Twitch"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "kilo.ai"
+      ],
+      "loser": "block",
+      "loser_target": "Геоблок",
+      "winner": "ai",
+      "winner_target": "AI"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "download.jetbrains.com"
+      ],
+      "loser": "ai",
+      "loser_target": "AI",
+      "winner": "bulk-direct",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "nflxvideo.net"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "bulk-direct-video",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "nflxvideo.net"
+      ],
+      "loser": "netflix",
+      "loser_target": "Видео",
+      "winner": "bulk-direct-video",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "cloudflare.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "cloudflare",
+      "winner_target": "Cloudflare"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "epicgames.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "epic-games",
+      "winner_target": "Игры"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "artstation.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "epic-games",
+      "winner_target": "Игры"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "sentry.io"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "malw-block",
+      "winner_target": "REJECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "facebookads.com"
+      ],
+      "loser": "meta",
+      "loser_target": "Meta",
+      "winner": "malw-block",
+      "winner_target": "REJECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "bintray.com"
+      ],
+      "loser": "tools",
+      "loser_target": "Геоблок",
+      "winner": "meta",
+      "winner_target": "Meta"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "windowsupdate.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "microsoft",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "geolocation.onetrust.com"
+      ],
+      "loser": "music",
+      "loser_target": "Геоблок",
+      "winner": "netflix",
+      "winner_target": "Видео"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "pinterest.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "pinterest",
+      "winner_target": "DIRECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "reddit.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "socials",
+      "winner_target": "Геоблок"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "fragment.com"
+      ],
+      "loser": "crypto",
+      "loser_target": "Геоблок",
+      "winner": "telegram",
+      "winner_target": "Telegram"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "capcut.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "tiktok",
+      "winner_target": "Геоблок"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "rutracker.org"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "torrent",
+      "winner_target": "Torrent"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "wstracker.online"
+      ],
+      "loser": "porn",
+      "loser_target": "Геоблок",
+      "winner": "torrent",
+      "winner_target": "Torrent"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "nvidia.com"
+      ],
+      "loser": "hodca",
+      "loser_target": "PROXY",
+      "winner": "vendors",
+      "winner_target": "Геоблок"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "events.data.microsoft.com"
+      ],
+      "loser": "ai",
+      "loser_target": "AI",
+      "winner": "win-spy",
+      "winner_target": "REJECT"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "suggestqueries.google.com"
+      ],
+      "loser": "ai",
+      "loser_target": "AI",
+      "winner": "youtube",
+      "winner_target": "YouTube"
+    },
+    {
+      "count": 1,
+      "examples": [
+        "suggestqueries.google.com"
+      ],
+      "loser": "geoblock",
+      "loser_target": "Геоблок",
+      "winner": "youtube",
+      "winner_target": "YouTube"
+    }
+  ]
+}

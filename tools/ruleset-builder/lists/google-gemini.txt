@@ -1,0 +1,4 @@
+# Static host of the Gemini web app. gstatic.com is DIRECT (google-bulk), but this host is
+# part of the Gemini page itself, so it follows Gemini through the AI group instead of being
+# the one request of the page that leaves from another IP. Matched before google-bulk.
+domain:gemini.gstatic.com

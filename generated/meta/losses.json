@@ -1,0 +1,105 @@
+{
+  "categories/block": {
+    "dropped": {
+      "single_label": 1
+    },
+    "examples": {
+      "single_label": [
+        ".ua"
+      ]
+    }
+  },
+  "categories/news": {
+    "dropped": {
+      "single_label": 1
+    },
+    "examples": {
+      "single_label": [
+        "DOMAIN-SUFFIX,bbc"
+      ]
+    }
+  },
+  "services/ai": {
+    "dropped": {
+      "unsupported:IP-ASN": 1
+    },
+    "examples": {
+      "unsupported:IP-ASN": [
+        "IP-ASN,20473"
+      ]
+    }
+  },
+  "services/meta": {
+    "dropped": {
+      "unsupported:IP-ASN": 1
+    },
+    "examples": {
+      "unsupported:IP-ASN": [
+        "IP-ASN,32934"
+      ]
+    }
+  },
+  "services/microsoft": {
+    "dropped": {
+      "single_label": 1
+    },
+    "examples": {
+      "single_label": [
+        "domain:xbox"
+      ]
+    }
+  },
+  "services/socials": {
+    "dropped": {
+      "single_label": 1
+    },
+    "examples": {
+      "single_label": [
+        "DOMAIN-SUFFIX,snapchat-com"
+      ]
+    }
+  },
+  "services/streaming": {
+    "dropped": {
+      "single_label": 1
+    },
+    "examples": {
+      "single_label": [
+        "DOMAIN-SUFFIX,fox"
+      ]
+    }
+  },
+  "services/tools": {
+    "dropped": {
+      "unsupported:DOMAIN-": 1
+    },
+    "examples": {
+      "unsupported:DOMAIN-": [
+        "DOMAIN-,makenotion.zendesk.com"
+      ]
+    }
+  },
+  "services/vendors": {
+    "dropped": {
+      "single_label": 5
+    },
+    "examples": {
+      "single_label": [
+        "DOMAIN-SUFFIX,cisco",
+        "DOMAIN-SUFFIX,java",
+        "DOMAIN-SUFFIX,oracle"
+      ]
+    }
+  },
+  "services/youtube": {
+    "dropped": {
+      "single_label": 2
+    },
+    "examples": {
+      "single_label": [
+        "domain:youtube",
+        "DOMAIN-SUFFIX,youtube"
+      ]
+    }
+  }
+}

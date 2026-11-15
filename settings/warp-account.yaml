@@ -1,0 +1,16 @@
+# WARP account credentials, the single place to change them (e.g. when the
+# developers' bot issues a new key). Rendered into the warp-common / warp-masque
+# anchors of every profile. The generated profiles contain these values, so keep
+# the repository private.
+# Optional overrides (e.g. from GitHub secrets): WARP_WG_PRIVATE_KEY and
+# WARP_MASQUE_PRIVATE_KEY replace the private keys below at build time.
+wireguard:
+  ip: 172.16.0.2
+  ipv6: 2606:4700:110:8ed0:a7c1:6c3d:250c:fead
+  private-key: cH/kbZcRKKIWI4JCzn3oSwk2GhcE2tYYdLW4wIalcn4=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  reserved: [111, 242, 183]
+  mtu: 1280
+masque: {sni: 4pda.to, ip: 172.16.0.2, ipv6: '2606:4700:110:81ac:424b:99b7:6d4d:7dfd',
+  private-key: MHcCAQEEIIZfQ+VXXdwN6eOJcs2pX0CpdyckWgATNI//BSrcs95moAoGCCqGSM49AwEHoUQDQgAE36dMuAaJ6RfEFEP2uyMy5fiY8gN7kU6TBX5e597eUL4lQfIkSfyzDDumVxTa88NXzjeBHRSNXxP+AVyjF8PJEg==,
+  public-key: MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==}

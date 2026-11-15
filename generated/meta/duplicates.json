@@ -1,0 +1,1432 @@
+{
+  "cross_category_duplicates": 348,
+  "domains": {
+    "aida.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "events.data.microsoft.com": [
+      "ai",
+      "win-spy"
+    ],
+    "githubcopilot.com": [
+      "ai",
+      "github"
+    ],
+    "api.fitbit.com": [
+      "ai",
+      "geoblock"
+    ],
+    "aistudio.google.com": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "canva-apps.com": [
+      "ai",
+      "geoblock"
+    ],
+    "robinfrontend-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "grok.com": [
+      "ai",
+      "geoblock"
+    ],
+    "notebooklm.google": [
+      "ai",
+      "geoblock",
+      "google-core"
+    ],
+    "opal.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "browser-intake-datadoghq.com": [
+      "ai",
+      "geoblock"
+    ],
+    "downloads.intercomcdn.com": [
+      "ai",
+      "geoblock"
+    ],
+    "copilot.microsoft.com": [
+      "ai",
+      "geoblock",
+      "microsoft"
+    ],
+    "fitbit-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "cloudaicompanion.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "antigravity-unleash.goog": [
+      "ai",
+      "geoblock"
+    ],
+    "production-openaicom-storage.azureedge.net": [
+      "ai",
+      "geoblock"
+    ],
+    "cloudcode-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "download.jetbrains.com": [
+      "ai",
+      "bulk-direct"
+    ],
+    "opal.google": [
+      "ai",
+      "geoblock"
+    ],
+    "generativeai.google": [
+      "ai",
+      "geoblock"
+    ],
+    "developerprofiles-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "claude.com": [
+      "ai",
+      "geoblock"
+    ],
+    "proxy.individual.githubcopilot.com": [
+      "ai",
+      "github"
+    ],
+    "notebooklm.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "intercom.io": [
+      "ai",
+      "geoblock"
+    ],
+    "chatgpt.com": [
+      "ai",
+      "geoblock"
+    ],
+    "cursor-cdn.com": [
+      "ai",
+      "geoblock"
+    ],
+    "labs.google": [
+      "ai",
+      "geoblock",
+      "google-core"
+    ],
+    "claudeusercontent.com": [
+      "ai",
+      "geoblock"
+    ],
+    "lookerstudio.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "grammarly.com": [
+      "ai",
+      "geoblock"
+    ],
+    "apis.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "geller-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "elevenreader.io": [
+      "ai",
+      "geoblock"
+    ],
+    "openaiapi-site.azureedge.net": [
+      "ai",
+      "geoblock"
+    ],
+    "assistant-s3-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "labs.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "ai.com": [
+      "ai",
+      "geoblock"
+    ],
+    "chat.openai.com.cdn.cloudflare.net": [
+      "ai",
+      "geoblock"
+    ],
+    "bard.google.com": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "generativelanguage.googleapis.com": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net": [
+      "ai",
+      "geoblock"
+    ],
+    "claude.ai": [
+      "ai",
+      "geoblock"
+    ],
+    "jules.google": [
+      "ai",
+      "geoblock"
+    ],
+    "notebooklm-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "aitestkitchen.withgoogle.com": [
+      "ai",
+      "geoblock"
+    ],
+    "fitbitvestibuleshim-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "openaicom.imgix.net": [
+      "ai",
+      "geoblock"
+    ],
+    "gemini.google.com": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "makersuite.google.com": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "o.pki.goog": [
+      "ai",
+      "geoblock"
+    ],
+    "ai.google.dev": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "notebooklm.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "oaistatic.com": [
+      "ai",
+      "geoblock"
+    ],
+    "elevenlabs.io": [
+      "ai",
+      "geoblock"
+    ],
+    "cursor.sh": [
+      "ai",
+      "geoblock"
+    ],
+    "openaicomproductionae4b.blob.core.windows.net": [
+      "ai",
+      "geoblock"
+    ],
+    "anthropic.com": [
+      "ai",
+      "geoblock"
+    ],
+    "proactivebackend-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "suggestqueries.google.com": [
+      "ai",
+      "geoblock",
+      "youtube"
+    ],
+    "oaiusercontent.com": [
+      "ai",
+      "geoblock"
+    ],
+    "kilo.ai": [
+      "ai",
+      "block"
+    ],
+    "jules.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "api.individual.githubcopilot.com": [
+      "ai",
+      "github"
+    ],
+    "clients6.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "aisandbox-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "edgeservices.bing.com": [
+      "ai",
+      "geoblock",
+      "microsoft"
+    ],
+    "sydney.bing.com": [
+      "ai",
+      "geoblock",
+      "microsoft"
+    ],
+    "cursorapi.com": [
+      "ai",
+      "geoblock"
+    ],
+    "api.jetbrains.ai": [
+      "ai",
+      "geoblock"
+    ],
+    "gpt3-openai.com": [
+      "ai",
+      "geoblock"
+    ],
+    "daily-cloudcode-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "deepmind.com": [
+      "ai",
+      "geoblock"
+    ],
+    "x.ai": [
+      "ai",
+      "geoblock"
+    ],
+    "antigravity.google": [
+      "ai",
+      "geoblock"
+    ],
+    "gemini.google": [
+      "ai",
+      "gemini",
+      "geoblock"
+    ],
+    "openai.com": [
+      "ai",
+      "geoblock"
+    ],
+    "antigravity.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "fitbit.google.com": [
+      "ai",
+      "geoblock"
+    ],
+    "canva.com": [
+      "ai",
+      "geoblock"
+    ],
+    "auth0.com": [
+      "ai",
+      "geoblock"
+    ],
+    "deepmind.google": [
+      "ai",
+      "geoblock"
+    ],
+    "ai.studio": [
+      "ai",
+      "geoblock"
+    ],
+    "antigravity-pa.googleapis.com": [
+      "ai",
+      "geoblock"
+    ],
+    "deepl.com": [
+      "ai",
+      "geoblock"
+    ],
+    "kemono.su": [
+      "anime",
+      "geoblock"
+    ],
+    "shiza-project.com": [
+      "anime",
+      "block"
+    ],
+    "mesu.apple.com": [
+      "apple",
+      "bulk-direct"
+    ],
+    "appldnld.apple.com": [
+      "apple",
+      "bulk-direct"
+    ],
+    "swdist.apple.com": [
+      "apple",
+      "bulk-direct"
+    ],
+    "swscan.apple.com": [
+      "apple",
+      "bulk-direct"
+    ],
+    "swcdn.apple.com": [
+      "apple",
+      "bulk-direct"
+    ],
+    "rutor.info": [
+      "block",
+      "torrent"
+    ],
+    "sndcdn.com": [
+      "block",
+      "music"
+    ],
+    "hetzner.com": [
+      "block",
+      "hodca"
+    ],
+    "rustorka.com": [
+      "block",
+      "torrent"
+    ],
+    "opensea.io": [
+      "block",
+      "crypto"
+    ],
+    "modrinth.com": [
+      "block",
+      "games"
+    ],
+    "musicbrainz.org": [
+      "block",
+      "music"
+    ],
+    "itch.io": [
+      "block",
+      "games"
+    ],
+    "omv-extras.org": [
+      "block",
+      "geoblock"
+    ],
+    "designify.com": [
+      "block",
+      "geoblock"
+    ],
+    "godaddy.com": [
+      "block",
+      "tools"
+    ],
+    "10minutemail.com": [
+      "block",
+      "tools"
+    ],
+    "filmitorrent.net": [
+      "block",
+      "torrent"
+    ],
+    "malwarebytes.com": [
+      "block",
+      "geoblock"
+    ],
+    "linear.app": [
+      "block",
+      "tools"
+    ],
+    "booktracker.org": [
+      "block",
+      "torrent"
+    ],
+    "infineon.com": [
+      "block",
+      "geoblock"
+    ],
+    "rutracker.net": [
+      "block",
+      "torrent"
+    ],
+    "rutor.org": [
+      "block",
+      "torrent"
+    ],
+    "medium.com": [
+      "block",
+      "tools"
+    ],
+    "patreonusercontent.com": [
+      "block",
+      "geoblock",
+      "socials"
+    ],
+    "thepiratebay.org": [
+      "block",
+      "torrent"
+    ],
+    "make.com": [
+      "block",
+      "geoblock",
+      "tools"
+    ],
+    "bestchange.ru": [
+      "block",
+      "tools"
+    ],
+    "sophos.com": [
+      "block",
+      "geoblock"
+    ],
+    "mega.nz": [
+      "block",
+      "tools"
+    ],
+    "okx.com": [
+      "block",
+      "crypto"
+    ],
+    "chesscomfiles.com": [
+      "block",
+      "games"
+    ],
+    "zendesk.com": [
+      "block",
+      "tools"
+    ],
+    "digikey.com": [
+      "block",
+      "geoblock"
+    ],
+    "linkedin.com": [
+      "block",
+      "socials"
+    ],
+    "soundcloud.com": [
+      "block",
+      "music"
+    ],
+    "protonvpn.com": [
+      "block",
+      "geoblock",
+      "hodca"
+    ],
+    "pixiv.net": [
+      "block",
+      "socials"
+    ],
+    "sap.com": [
+      "block",
+      "geoblock"
+    ],
+    "kinozal.me": [
+      "block",
+      "torrent"
+    ],
+    "rutracker.wiki": [
+      "block",
+      "torrent"
+    ],
+    "fls.guru": [
+      "block",
+      "geoblock"
+    ],
+    "nnmstatic.win": [
+      "block",
+      "torrent"
+    ],
+    "rutracker.org": [
+      "block",
+      "hodca",
+      "torrent"
+    ],
+    "fastpic.org": [
+      "block",
+      "hodca",
+      "tools"
+    ],
+    "rutracker.cc": [
+      "block",
+      "torrent"
+    ],
+    "onlinesim.io": [
+      "block",
+      "geoblock"
+    ],
+    "soundcloud.cloud": [
+      "block",
+      "music"
+    ],
+    "chess.com": [
+      "block",
+      "games"
+    ],
+    "forum.netgate.com": [
+      "block",
+      "geoblock"
+    ],
+    "element14.com": [
+      "block",
+      "geoblock"
+    ],
+    "notepad-plus-plus.org": [
+      "block",
+      "tools"
+    ],
+    "pixabay.com": [
+      "block",
+      "geoblock"
+    ],
+    "nnmclub.to": [
+      "block",
+      "torrent"
+    ],
+    "tuta.com": [
+      "block",
+      "tools"
+    ],
+    "proton.me": [
+      "block",
+      "geoblock",
+      "tools"
+    ],
+    "rutor.is": [
+      "block",
+      "torrent"
+    ],
+    "1337x.to": [
+      "block",
+      "torrent"
+    ],
+    "booth.pm": [
+      "block",
+      "socials"
+    ],
+    "quora.com": [
+      "block",
+      "socials"
+    ],
+    "speedtest.net": [
+      "block",
+      "tools"
+    ],
+    "linktr.ee": [
+      "block",
+      "tools"
+    ],
+    "patreon.com": [
+      "block",
+      "geoblock",
+      "socials"
+    ],
+    "licdn.com": [
+      "block",
+      "socials"
+    ],
+    "cdn-lfs.hf.co": [
+      "bulk-direct",
+      "hodca"
+    ],
+    "cdn-lfs.huggingface.co": [
+      "bulk-direct",
+      "hodca"
+    ],
+    "cdn-lfs-us-1.hf.co": [
+      "bulk-direct",
+      "hodca"
+    ],
+    "steamcontent.com": [
+      "bulk-direct",
+      "steam"
+    ],
+    "steamserver.net": [
+      "bulk-direct",
+      "steam"
+    ],
+    "cdn-lfs-eu-1.hf.co": [
+      "bulk-direct",
+      "hodca"
+    ],
+    "nflxvideo.net": [
+      "bulk-direct-video",
+      "geoblock",
+      "netflix"
+    ],
+    "alt-ad.mail.ru": [
+      "category-ads",
+      "malw-block"
+    ],
+    "ad.mail.ru": [
+      "category-ads",
+      "malw-block"
+    ],
+    "cloudflare.com": [
+      "cloudflare",
+      "hodca"
+    ],
+    "crunchbase.com": [
+      "crypto",
+      "geoblock"
+    ],
+    "fragment.com": [
+      "crypto",
+      "telegram"
+    ],
+    "artstation.com": [
+      "epic-games",
+      "hodca"
+    ],
+    "epicgames.com": [
+      "epic-games",
+      "geoblock"
+    ],
+    "ubi.com": [
+      "games",
+      "geoblock"
+    ],
+    "battle.net": [
+      "games",
+      "geoblock"
+    ],
+    "adobe.io": [
+      "geoblock",
+      "tools"
+    ],
+    "cisco.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "intel.de": [
+      "geoblock",
+      "vendors"
+    ],
+    "autodesk.com": [
+      "geoblock",
+      "tools"
+    ],
+    "strava.com": [
+      "geoblock",
+      "hodca",
+      "tools"
+    ],
+    "teamviewer.com": [
+      "geoblock",
+      "hodca",
+      "tools"
+    ],
+    "nflximg.net": [
+      "geoblock",
+      "netflix"
+    ],
+    "weather.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "terraform.io": [
+      "geoblock",
+      "tools"
+    ],
+    "adobe.com": [
+      "geoblock",
+      "tools"
+    ],
+    "notion.site": [
+      "geoblock",
+      "tools"
+    ],
+    "force.com": [
+      "geoblock",
+      "tools"
+    ],
+    "notion.new": [
+      "geoblock",
+      "tools"
+    ],
+    "notion.so": [
+      "geoblock",
+      "tools"
+    ],
+    "sentry.io": [
+      "geoblock",
+      "malw-block",
+      "tools"
+    ],
+    "redditmail.com": [
+      "geoblock",
+      "socials"
+    ],
+    "nflximg.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "pscdn.co": [
+      "geoblock",
+      "music"
+    ],
+    "foxnews.com": [
+      "geoblock",
+      "news",
+      "streaming"
+    ],
+    "ftcdn.net": [
+      "geoblock",
+      "tools"
+    ],
+    "salesforce.com": [
+      "geoblock",
+      "tools"
+    ],
+    "fxnetworks.com": [
+      "geoblock",
+      "streaming"
+    ],
+    "typekit.net": [
+      "geoblock",
+      "tools"
+    ],
+    "adobess.com": [
+      "geoblock",
+      "tools"
+    ],
+    "tidal.com": [
+      "geoblock",
+      "music"
+    ],
+    "naukri.com": [
+      "geoblock",
+      "tools"
+    ],
+    "adobeexchange.com": [
+      "geoblock",
+      "tools"
+    ],
+    "37signals.com": [
+      "geoblock",
+      "tools"
+    ],
+    "oraclecloud.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "nflxext.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "jetbrains.team": [
+      "geoblock",
+      "tools"
+    ],
+    "webex.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "netflix.ca": [
+      "geoblock",
+      "netflix"
+    ],
+    "netflixtechblog.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "clickup.com": [
+      "geoblock",
+      "tools"
+    ],
+    "showtime.com": [
+      "geoblock",
+      "streaming"
+    ],
+    "nflxso.net": [
+      "geoblock",
+      "netflix"
+    ],
+    "geolocation.onetrust.com": [
+      "geoblock",
+      "music",
+      "netflix",
+      "tools"
+    ],
+    "editorx.com": [
+      "geoblock",
+      "tools"
+    ],
+    "protonstatus.com": [
+      "geoblock",
+      "tools"
+    ],
+    "adobeccstatic.com": [
+      "geoblock",
+      "tools"
+    ],
+    "qualtrics.com": [
+      "geoblock",
+      "hodca",
+      "tools",
+      "vendors"
+    ],
+    "wbagora.com": [
+      "geoblock",
+      "hodca"
+    ],
+    "onetrust.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "amd.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "disneyplus.com": [
+      "geoblock",
+      "streaming"
+    ],
+    "netflixinvestor.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "spotify.com": [
+      "geoblock",
+      "music"
+    ],
+    "adobesc.com": [
+      "geoblock",
+      "tools"
+    ],
+    "qobuz.com": [
+      "geoblock",
+      "music"
+    ],
+    "netflixstudios.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "intel.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "musemuse.cn": [
+      "geoblock",
+      "tiktok"
+    ],
+    "deezer.com": [
+      "geoblock",
+      "music"
+    ],
+    "hellonotion.com": [
+      "geoblock",
+      "tools"
+    ],
+    "zapier-deployment.com": [
+      "geoblock",
+      "tools"
+    ],
+    "bytegecko-i18n.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "netflix.com": [
+      "geoblock",
+      "netflix"
+    ],
+    "primevideo.com": [
+      "geoblock",
+      "streaming"
+    ],
+    "ttwebview.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "usher.ttvnw.net": [
+      "geoblock",
+      "twitch",
+      "twitch-ads"
+    ],
+    "gql.twitch.tv": [
+      "geoblock",
+      "twitch",
+      "twitch-ads"
+    ],
+    "lenso.ai": [
+      "geoblock",
+      "hodca"
+    ],
+    "spotify.design": [
+      "geoblock",
+      "music"
+    ],
+    "adobegov.com": [
+      "geoblock",
+      "tools"
+    ],
+    "nflxsearch.net": [
+      "geoblock",
+      "netflix"
+    ],
+    "v16-tiktokcdn-com.akamaized.net": [
+      "geoblock",
+      "tiktok"
+    ],
+    "hashicorp.com": [
+      "geoblock",
+      "tools"
+    ],
+    "herokucdn.com": [
+      "geoblock",
+      "tools"
+    ],
+    "sgpstatp.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "ttoversea.net": [
+      "geoblock",
+      "tiktok"
+    ],
+    "fast.com": [
+      "geoblock",
+      "netflix",
+      "tools"
+    ],
+    "dzcdn.net": [
+      "geoblock",
+      "music"
+    ],
+    "zapier.com": [
+      "geoblock",
+      "tools"
+    ],
+    "trailblazer.me": [
+      "geoblock",
+      "tools"
+    ],
+    "byteintlapi.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "4pda.to": [
+      "geoblock",
+      "socials"
+    ],
+    "adobeprojectm.com": [
+      "geoblock",
+      "tools"
+    ],
+    "protonmail.com": [
+      "geoblock",
+      "tools"
+    ],
+    "netacad.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "xsts.auth.xboxlive.com": [
+      "geoblock",
+      "microsoft"
+    ],
+    "tiktokmusic.app": [
+      "geoblock",
+      "tiktok"
+    ],
+    "adobelogin.com": [
+      "geoblock",
+      "tools"
+    ],
+    "last.fm": [
+      "geoblock",
+      "music"
+    ],
+    "salesforceliveagent.com": [
+      "geoblock",
+      "tools"
+    ],
+    "adobecc.com": [
+      "geoblock",
+      "tools"
+    ],
+    "notion-emojis.s3-us-west-2.amazonaws.com": [
+      "geoblock",
+      "tools"
+    ],
+    "atlassian.com": [
+      "geoblock",
+      "tools"
+    ],
+    "notion-static.com": [
+      "geoblock",
+      "tools"
+    ],
+    "gpsonextra.net": [
+      "geoblock",
+      "vendors"
+    ],
+    "pinata.cloud": [
+      "geoblock",
+      "hodca"
+    ],
+    "notionup.com": [
+      "geoblock",
+      "tools"
+    ],
+    "mongodb.com": [
+      "geoblock",
+      "hodca"
+    ],
+    "adobetag.com": [
+      "geoblock",
+      "tools"
+    ],
+    "wbgames.com": [
+      "geoblock",
+      "hodca"
+    ],
+    "ttwstatic.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "oculus.com": [
+      "geoblock",
+      "meta"
+    ],
+    "ttoverseaus.net": [
+      "geoblock",
+      "tiktok"
+    ],
+    "adobeoobe.com": [
+      "geoblock",
+      "tools"
+    ],
+    "tik-tokapi.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "bitnami.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "adobejanus.com": [
+      "geoblock",
+      "tools"
+    ],
+    "jetbrains.com": [
+      "geoblock",
+      "tools"
+    ],
+    "vagrantcloud.com": [
+      "geoblock",
+      "tools"
+    ],
+    "bytedapm.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "spotifycodes.com": [
+      "geoblock",
+      "music"
+    ],
+    "trailhead.com": [
+      "geoblock",
+      "tools"
+    ],
+    "max.com": [
+      "geoblock",
+      "streaming"
+    ],
+    "hbomax.com": [
+      "geoblock",
+      "streaming"
+    ],
+    "pm.me": [
+      "geoblock",
+      "tools"
+    ],
+    "qualcomm.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "notion.com": [
+      "geoblock",
+      "tools"
+    ],
+    "wdfiles.com": [
+      "geoblock",
+      "tools"
+    ],
+    "ikea.com": [
+      "geoblock",
+      "hodca"
+    ],
+    "typekit.com": [
+      "geoblock",
+      "tools"
+    ],
+    "tutanota.com": [
+      "geoblock",
+      "tools"
+    ],
+    "spotifyjobs.com": [
+      "geoblock",
+      "music"
+    ],
+    "adobedtm.com": [
+      "geoblock",
+      "streaming",
+      "tools"
+    ],
+    "scdn.co": [
+      "geoblock",
+      "music"
+    ],
+    "truthsocial.com": [
+      "geoblock",
+      "socials"
+    ],
+    "razer.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "spotifycharts.com": [
+      "geoblock",
+      "music"
+    ],
+    "sentry.dev": [
+      "geoblock",
+      "tools"
+    ],
+    "spotifyforbrands.com": [
+      "geoblock",
+      "music"
+    ],
+    "naukimg.com": [
+      "geoblock",
+      "tools"
+    ],
+    "wikidot.com": [
+      "geoblock",
+      "tools"
+    ],
+    "jetbrains.space": [
+      "geoblock",
+      "tools"
+    ],
+    "dell.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "dellcdn.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "oracle.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "e-hentai.org": [
+      "geoblock",
+      "porn"
+    ],
+    "web-platform.io": [
+      "geoblock",
+      "tools"
+    ],
+    "byspotify.com": [
+      "geoblock",
+      "music"
+    ],
+    "ibm.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "spoti.fi": [
+      "geoblock",
+      "music"
+    ],
+    "protonmail.ch": [
+      "geoblock",
+      "tools"
+    ],
+    "meta.com": [
+      "geoblock",
+      "meta"
+    ],
+    "lf16-pkgcdn.pitaya-clientai.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "imgur.com": [
+      "geoblock",
+      "socials"
+    ],
+    "tableau.com": [
+      "geoblock",
+      "tools"
+    ],
+    "notionusercontent.com": [
+      "geoblock",
+      "tools"
+    ],
+    "jetbrains.ai": [
+      "geoblock",
+      "tools"
+    ],
+    "spotify-everywhere.com": [
+      "geoblock",
+      "music"
+    ],
+    "myheritage.com": [
+      "geoblock",
+      "tools"
+    ],
+    "byteoversea.net": [
+      "geoblock",
+      "tiktok"
+    ],
+    "p16-tiktokcdn-com.akamaized.net": [
+      "geoblock",
+      "tiktok"
+    ],
+    "rewards.bing.com": [
+      "geoblock",
+      "microsoft"
+    ],
+    "basecampapi.com": [
+      "geoblock",
+      "tools"
+    ],
+    "amazon.com": [
+      "geoblock",
+      "hodca"
+    ],
+    "intel.nl": [
+      "geoblock",
+      "vendors"
+    ],
+    "vmware.com": [
+      "geoblock",
+      "vendors"
+    ],
+    "news.google.com": [
+      "geoblock",
+      "news"
+    ],
+    "notion-media.com": [
+      "geoblock",
+      "tools"
+    ],
+    "tiktokglobalshop.com": [
+      "geoblock",
+      "tiktok"
+    ],
+    "netflix.net": [
+      "geoblock",
+      "netflix"
+    ],
+    "grazie.ai": [
+      "geoblock",
+      "tools"
+    ],
+    "redditmedia.com": [
+      "geoblock",
+      "socials"
+    ],
+    "behance.net": [
+      "geoblock",
+      "tools"
+    ],
+    "gvt1.com": [
+      "google-bulk",
+      "youtube"
+    ],
+    "gvt2.com": [
+      "google-bulk",
+      "youtube"
+    ],
+    "ggpht.com": [
+      "google-bulk",
+      "youtube"
+    ],
+    "pinterest.com": [
+      "hodca",
+      "pinterest"
+    ],
+    "gitlab.com": [
+      "hodca",
+      "tools"
+    ],
+    "windowsupdate.com": [
+      "hodca",
+      "microsoft"
+    ],
+    "nvidia.com": [
+      "hodca",
+      "vendors"
+    ],
+    "capcut.com": [
+      "hodca",
+      "tiktok",
+      "tools"
+    ],
+    "capcutapi.com": [
+      "hodca",
+      "tools"
+    ],
+    "ubuntu-touch.io": [
+      "hodca",
+      "tools"
+    ],
+    "pypi.org": [
+      "hodca",
+      "tools"
+    ],
+    "reddit.com": [
+      "hodca",
+      "socials"
+    ],
+    "capcutstatic.com": [
+      "hodca",
+      "tools"
+    ],
+    "bitbucket.org": [
+      "hodca",
+      "tools"
+    ],
+    "sentry-cdn.com": [
+      "malw-block",
+      "tools"
+    ],
+    "facebookads.com": [
+      "malw-block",
+      "meta"
+    ],
+    "bintray.com": [
+      "meta",
+      "tools"
+    ],
+    "bbc.co.uk": [
+      "news",
+      "streaming"
+    ],
+    "sankakucomplex.com": [
+      "porn",
+      "tools"
+    ],
+    "wstracker.online": [
+      "porn",
+      "torrent"
+    ],
+    "bam.nr-data.net": [
+      "streaming",
+      "tools"
+    ]
+  },
+  "note": "Duplicates are removed across sources inside each category. Cross-category duplicates are reported but intentionally preserved until semantic category merging is designed."
+}

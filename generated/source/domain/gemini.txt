@@ -1,0 +1,8 @@
++.ai.google.dev
++.aistudio.google.com
++.bard.google.com
++.gemini.google
++.gemini.google.com
++.gemini.gstatic.com
++.generativelanguage.googleapis.com
++.makersuite.google.com

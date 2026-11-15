@@ -1,0 +1,11 @@
+# Providers which are not produced by the aggregator.
+# `mirror: NAME` points at generated/mirror/NAME.* (see settings/mirror.yaml); the
+# final profile builder adds the shared GitHub Authorization header to them.
+static:
+  - {name: private-domains, behavior: domain,   format: mrs,  mirror: private-domains}
+  - {name: category-ru,     behavior: domain,   format: mrs,  mirror: category-ru}
+  - {name: whitelist,       behavior: domain,   format: mrs,  mirror: whitelist}
+  - {name: private-ips,     behavior: ipcidr,   format: mrs,  mirror: private-ips}
+  - {name: direct-ips,      behavior: ipcidr,   format: mrs,  mirror: direct-ips}
+  - {name: whitelist-ips,   behavior: ipcidr,   format: mrs,  mirror: whitelist-ips}
+  - {name: ru-apps,         behavior: classical, format: yaml, mirror: ru-apps}

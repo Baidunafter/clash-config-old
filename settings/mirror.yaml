@@ -1,0 +1,14 @@
+# Upstream files that are copied verbatim into generated/mirror/ on every build.
+# Profiles load them from this repository instead of jsDelivr (whose branch cache
+# can lag by hours) or third-party raw URLs, so every provider of a profile comes
+# from one place and one consistent snapshot.
+#   source: key in settings/repositories.yaml, path: file inside that repository
+mirror:
+  private-domains: {source: roscomvpn_geosite, path: release/mihomo/private.mrs}
+  category-ru:     {source: roscomvpn_geosite, path: release/mihomo/category-ru.mrs}
+  whitelist:       {source: roscomvpn_geosite, path: release/mihomo/whitelist.mrs}
+  private-ips:     {source: roscomvpn_geoip,   path: release/mihomo/private.mrs}
+  direct-ips:      {source: roscomvpn_geoip,   path: release/mihomo/direct.mrs}
+  whitelist-ips:   {source: roscomvpn_geoip,   path: release/mihomo/whitelist.mrs}
+  # Android package names (PROCESS-NAME) of Russian apps; must stay classical.
+  ru-apps:         {source: codelab_ruleset,   path: ruleset/ru-apps.yaml}

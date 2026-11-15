@@ -1,0 +1,29 @@
+mihomo:
+  version: v1.19.30
+  asset: mihomo-linux-amd64-compatible-v1.19.30.gz
+  sha256: db214c7a2517e63c150d123178d16d102e03a241ccdae4e5e07ffbe9cf56c6f9
+
+# MALW non-blocking IP mappings are disabled as Mihomo hosts overrides.
+# The MALW blocking section is still aggregated into malw-block.
+malw:
+  publish_host_overrides: false
+  # Warn (not fail) when the MALW hosts file has not been updated for this long.
+  max_age_days: 45
+
+# Safeguards against upstream files that were renamed, truncated or emptied.
+# A category whose size drops by more than max_shrink_percent compared with the
+# previous generated/meta/manifest.json fails the build. Accept an intended
+# shrink with `build.py --allow-shrink NAME`, the ALLOW_SHRINK env variable
+# (workflow_dispatch input) or by listing the name here.
+guard:
+  max_shrink_percent: 40
+  min_previous_size: 50
+  allow_shrink: []
+
+# Informational routing checks (generated/meta/conflicts.json, warnings in the log):
+# domains of proxied categories that are also in these Russian direct lists.
+conflicts:
+  direct_lists:
+    - {source: roscomvpn, path: category-ru}
+    - {source: roscomvpn, path: whitelist}
+

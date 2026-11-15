@@ -1,0 +1,10 @@
+# MASQUE (QUIC / HTTP2) endpoints. Rendered with the *warp-masque anchor,
+# every other key of an entry is copied to the proxy as is.
+proxies:
+  - name: "[🎭] WARP-MASQUE QUIC"
+    server: 162.159.198.2
+    port: 443
+  - name: "[🎭] WARP-MASQUE H2"
+    server: 162.159.198.2
+    port: 443
+    network: h2

@@ -1,0 +1,24 @@
+# endpoints: which proxies/*-endpoint.yaml sets a profile contains.
+#   geo     [🌍] relay servers in other countries (traffic limit, avoid heavy traffic)
+#   origin  [⭐] Cloudflare endpoints
+#   default [☁️] ~120 Cloudflare address ranges (heavy for the url-test group)
+#   masque  [🎭] MASQUE endpoints
+# Markers of unused types are removed from the filters of proxy groups.
+# user_rules_dir: folder with this profile's own user-exclude.yaml and user-geo-block.yaml.
+# A device that loads a profile downloads only the files that profile references.
+profiles:
+  WARPxUNIVERSAL.yaml:
+    enabled: true
+    template: templates/profile.yaml
+    user_rules_dir: profiles/universal
+    endpoints: [geo, origin, masque]
+    exclude_rule_providers: []
+  WARPxALT.yaml:
+    enabled: true
+    template: templates/profile.yaml
+    user_rules_dir: profiles/alt
+    endpoints: [geo, origin, masque]
+    exclude_rule_providers: [porn, porno]
+runtime:
+  rule_provider_interval: 86400
+  source_check_interval_hours: 24

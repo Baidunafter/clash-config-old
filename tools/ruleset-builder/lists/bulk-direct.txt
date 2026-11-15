@@ -1,0 +1,57 @@
+# Large software downloads of services that work without a VPN in Russia. DIRECT, matched
+# before the categories that contain them (apple -> PROXY, steam / epic-games -> Игры), so a
+# multi-gigabyte update never uses (or burns the quota of) a proxy node you picked for the
+# service itself. Add hosts here after spotting them in the connections list of your client.
+#
+# Software downloads that do not need a geo exit. If a vendor blocks Russian addresses for a
+# host below, delete its line: the host then follows its category again.
+# Streaming video lives in bulk-direct-video.txt (separate, so a profile can switch it off).
+#
+# Apple software updates and app downloads
+domain:cdn-apple.com
+domain:swcdn.apple.com
+domain:swdist.apple.com
+domain:swscan.apple.com
+domain:mesu.apple.com
+domain:appldnld.apple.com
+domain:iosapps.itunes.apple.com
+domain:osxapps.itunes.apple.com
+# Steam game content
+domain:steamcontent.com
+domain:steamserver.net
+domain:steamcdn-a.akamaihd.net
+# Epic Games Launcher downloads
+domain:download.epicgames.com
+domain:download2.epicgames.com
+domain:download3.epicgames.com
+domain:download4.epicgames.com
+domain:fastly-download.epicgames.com
+domain:epicgames-download1.akamaized.net
+domain:cloudflare.epicgamescdn.com
+# Hugging Face model files (huge); the site itself stays in its category
+domain:cdn-lfs.hf.co
+domain:cdn-lfs-us-1.hf.co
+domain:cdn-lfs-eu-1.hf.co
+domain:cdn-lfs.huggingface.co
+domain:xethub.hf.co
+# Docker image layers (sign-in and the website stay in their categories)
+domain:registry-1.docker.io
+domain:production.cloudflare.docker.com
+# Vendor driver and installer downloads
+domain:download.nvidia.com
+domain:downloadmirror.intel.com
+domain:drivers.amd.com
+domain:download.amd.com
+domain:dl.dell.com
+domain:downloads.dell.com
+domain:ftp.hp.com
+domain:ftp.ext.hp.com
+domain:download01.logi.com
+domain:download.logitech.com
+domain:download.oracle.com
+domain:javadl.oracle.com
+domain:download.jetbrains.com
+domain:download-cdn.jetbrains.com
+domain:ccmdls.adobe.com
+domain:download.mozilla.org
+domain:ftp.mozilla.org

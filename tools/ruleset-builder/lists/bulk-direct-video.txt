@@ -1,0 +1,9 @@
+# Video data of streaming services, DIRECT. Only the control traffic (sign-in, catalogue,
+# licences) needs the geo exit; the video itself is the bulk of the traffic.
+#
+# This is a separate list on purpose: a service may bind its video URLs to the IP that
+# requested them, and then playback fails or stalls. If that happens, remove the line, or
+# switch the whole list off in one profile with exclude_rule_providers: [bulk-direct-video].
+# Other streaming CDNs (aiv-cdn.net, hulustream.com, dssott.com, ...) are in no category,
+# so they already follow the default route.
+domain:nflxvideo.net

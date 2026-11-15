@@ -1,0 +1,61 @@
+proxies:
+  - name: "[🌍] 🇳🇱 Нидерланды"
+    server: nl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇳🇱 Нидерланды"
+    server: nl.tribukvy.ltd
+    port: 443
+  - name: "[🌍] 🇵🇱 Польша"
+    server: pl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇵🇱 Польша"
+    server: pl.tribukvy.ltd
+    port: 443
+  - name: "[🌍] 🇷🇺 Россия"
+    server: ru0.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇷🇺 Россия"
+    server: ru0.tribukvy.ltd
+    port: 443
+  - name: "[🌍] 🇫🇮 Финляндия"
+    server: fi.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇫🇮 Финляндия"
+    server: fi.tribukvy.ltd
+    port: 443
+  - name: "[🌍] 🇩🇪 Германия"
+    server: de.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇩🇪 Германия"
+    server: de.tribukvy.ltd
+    port: 443
+  - name: "[🌍] 🇱🇻 Латвия"
+    server: lv.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇱🇻 Латвия"
+    server: lv.tribukvy.ltd
+    port: 443
+  - name: "[🌍] 🇪🇪 Эстония"
+    server: ee.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] 🇪🇪 Эстония"
+    server: ee.tribukvy.ltd
+    port: 443
+  - name: "[🌍] TEL 🇵🇱 Польша"
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] TEL 🇵🇱 Польша"
+    server: tel.pl.tribukvy.ltd
+    port: 443
+  - name: "[🌍] TEL 🇫🇮 Финляндия"
+    server: tel.fi.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] TEL 🇫🇮 Финляндия"
+    server: tel.fi.tribukvy.ltd
+    port: 443
+  - name: "[🌍] TEL 🇩🇪 Германия"
+    server: tel.de.tribukvy.ltd
+    port: 4500
+  - name: "[🌍 MQ] TEL 🇩🇪 Германия"
+    server: tel.de.tribukvy.ltd
+    port: 443

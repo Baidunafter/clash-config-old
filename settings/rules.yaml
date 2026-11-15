@@ -1,0 +1,131 @@
+generated_targets:
+  ai: AI
+  anime: Геоблок
+  apple: PROXY
+  cloudflare: Cloudflare
+  discord: Discord
+  epic-games: Игры
+  games: Игры
+  geoblock: Геоблок
+  # roscomvpn: twitch-ads = ad-free playback at 1080p+, only through a proxy. Never REJECT:
+  # gql.twitch.tv and usher.ttvnw.net are the playback endpoints.
+  twitch-ads: Обход качества Twitch
+  # Google: bulk first (DIRECT), then everything that carries the session through the AI group,
+  # so Gemini, sign-in, Play and Meet share one exit IP.
+  google-core: AI
+  bulk-direct: DIRECT
+  bulk-direct-video: DIRECT
+  gemini: Gemini
+  google-bulk: DIRECT
+  # itdog Categories/block.lst = sites blocked in Russia (route through the proxy, like geoblock). Not an ad/malware list.
+  block: Геоблок
+  streaming: Видео
+  vendors: Геоблок
+  crypto: Геоблок
+  hodca: PROXY
+  github: Cloudflare
+  meta: Meta
+  microsoft: DIRECT
+  music: Геоблок
+  netflix: Видео
+  news: Геоблок
+  pinterest: DIRECT
+  porn: Геоблок
+  riot: Игры
+  socials: Геоблок
+  steam: Игры
+  telegram: Telegram
+  tiktok: Геоблок
+  tools: Геоблок
+  torrent: Torrent
+  twitch: DIRECT
+  twitter: Геоблок
+  windsurf: AI
+  youtube: YouTube
+generated_blocks:
+- category-ads
+- malw-block
+- win-spy
+generated_ip_targets:
+  discord: Discord
+  telegram: Telegram
+  meta: Meta
+  twitter: Геоблок
+  cloudflare: Cloudflare
+  google-meet: AI
+ordered_rules:
+# Telegram connects by IP address (no DNS name), so its IP ranges go first: no
+# later rule can claim them before they reach the Telegram group.
+- ip: telegram
+- RULE-SET,private-ips,DIRECT,no-resolve
+- RULE-SET,private-domains,DIRECT
+- RULE-SET,user-exclude,DIRECT
+- RULE-SET,user-geo-block,Геоблок
+- block: category-ads
+- block: malw-block
+- block: win-spy
+- RULE-SET,category-ru,DIRECT
+- RULE-SET,whitelist,DIRECT
+- RULE-SET,direct-ips,DIRECT,no-resolve
+# Android package names of Russian apps (PROCESS-NAME); on other platforms it matches nothing.
+- RULE-SET,ru-apps,DIRECT
+# IPv6 is off in this profile (settings/core.yaml). A connection made straight to an IPv6
+# address (a browser with its own DNS-over-HTTPS, a client that ignores AAAA filtering) would
+# leave from another exit IP than the IPv4 connections of the same site, and Google then sees
+# one session from two addresses. Rejecting it makes the application fall back to IPv4 at once.
+# Telegram's IPv6 ranges (first rule), private and Russian direct ranges are matched earlier.
+- IP-CIDR6,::/0,REJECT,no-resolve
+- domain: telegram
+- DOMAIN-SUFFIX,adserver.twitch.tv,REJECT
+- DOMAIN-SUFFIX,ads.twitch.tv,REJECT
+- DOMAIN-KEYWORD,twitch-ads,REJECT
+- DOMAIN-KEYWORD,amazon-adsystem,REJECT
+- domain: twitch-ads
+- domain: twitch
+- domain: bulk-direct
+- domain: bulk-direct-video
+- domain: gemini
+- domain: google-bulk
+- domain: youtube
+- domain: google-core
+- domain: discord
+- domain: ai
+- domain: meta
+- ip: meta
+- domain: twitter
+- ip: twitter
+- domain: tiktok
+- domain: netflix
+- domain: streaming
+- domain: torrent
+- domain: tools
+- domain: vendors
+- domain: crypto
+- domain: socials
+- domain: music
+- domain: games
+- domain: github
+- domain: apple
+- domain: microsoft
+- ip: google-meet
+- domain: cloudflare
+- ip: cloudflare
+- domain: steam
+- domain: epic-games
+- domain: riot
+- domain: pinterest
+- domain: windsurf
+- domain: block
+- domain: geoblock
+- domain: news
+- domain: porn
+- domain: anime
+- DOMAIN-KEYWORD,notion,Геоблок
+- DOMAIN-KEYWORD,chrome,DIRECT
+- DOMAIN-SUFFIX,activision.com,Игры
+- DOMAIN-SUFFIX,callofduty.com,Игры
+- DOMAIN-SUFFIX,demonware.net,Игры
+- DOMAIN-SUFFIX,apple.com,PROXY
+- domain: hodca
+- AND,((NETWORK,udp),(RULE-SET,discord-ip)),Discord
+- MATCH,Все остальное

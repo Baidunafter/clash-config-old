@@ -1,0 +1,380 @@
+# Canonical categories. Every listed source is merged, normalized and deduplicated.
+# Source paths are upstream paths, not local paths.
+# Parent / shared-infrastructure domains. blackmatrix7 lists are written for
+# "proxy everything" use and may contain them; a `+.` suffix entry for any of
+# these would route a whole unrelated platform through the category. Only these
+# exact entries are removed (specific sub-domains from the list are kept).
+x-shared-infra: &shared_infra
+  - google.com
+  - googleapis.com
+  - gstatic.com
+  - googleusercontent.com
+  - youtube.com
+  - microsoft.com
+  - microsoftonline.com
+  - live.com
+  - office.com
+  - bing.com
+  - apple.com
+  - icloud.com
+  - github.com
+  - githubusercontent.com
+  - cloudflare.com
+  - challenges.cloudflare.com
+  - amazonaws.com
+  - cloudfront.net
+  - akamai.net
+  - akamaihd.net
+  - edgekey.net
+  - fastly.net
+  - stripe.com
+  - sentry.io
+  - intercom.io
+  - intercomcdn.com
+  - identrust.com
+  - googletagmanager.com
+  - google-analytics.com
+  - doubleclick.net
+  - windows.net
+  - azure.com
+  - azureedge.net
+  - trafficmanager.net
+  - cloudflare.net
+  - cloudflareinsights.com
+  - akamaized.net
+  - edgesuite.net
+  - llnwd.net
+  - jsdelivr.net
+  - cdnjs.com
+  - unpkg.com
+  - jquery.com
+  - bootstrapcdn.com
+  - fontawesome.com
+  - gravatar.com
+
+services:
+  youtube:
+    roscomvpn: [youtube]
+    itdog: [Services/youtube.lst]
+    codelab: [ruleset/youtube.yaml]
+
+  telegram:
+    roscomvpn: [telegram]
+    itdog: [Services/telegram.lst]
+    codelab: [ruleset/telegram.yaml]
+
+  discord:
+    itdog: [Services/discord.lst]
+    codelab: [ruleset/discord.yaml]
+
+  github:
+    roscomvpn: [github]
+    malw: [GitHub Copilot]
+
+  ai:
+    roscomvpn: [google-deepmind]
+    itdog: [Services/google_ai.lst]
+    codelab: [ruleset/ai.yaml]
+    # Copilot is intentionally not added: its list is expected to contain bing.com.
+    blackmatrix7: [OpenAI, Claude, Anthropic, Gemini, BardAI, Civitai]
+    exclude_domains:
+      # api.github.com is a general GitHub API host: it stays with the github category
+      all: [api.github.com]
+      blackmatrix7: *shared_infra
+    malw:
+      - OpenAI
+      - GitHub Copilot
+      - JetBrains
+      - ElevenLabs
+      - Grok
+      - DeepL
+      - Google
+      - Claude
+      - ?Trae.ai        # section removed from the MALW file in autumn 2026
+
+  apple:
+    roscomvpn: [apple]
+
+  microsoft:
+    roscomvpn: [microsoft]
+    malw: [Microsoft]
+
+  twitch:
+    roscomvpn: [twitch]
+    malw: [Twitch]
+
+  twitch-ads:
+    roscomvpn: [twitch-ads]
+
+  meta:
+    itdog: [Services/meta.lst]
+    codelab: [ruleset/meta.yaml]
+    blackmatrix7: [Facebook, Instagram, Threads, Whatsapp]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  twitter:
+    itdog: [Services/twitter.lst]
+    codelab: [ruleset/twitter.yaml]
+
+  tiktok:
+    itdog: [Services/tiktok.lst]
+    codelab: [ruleset/tiktok.yaml]
+
+  cloudflare:
+    itdog: [Services/cloudflare.lst]
+
+  steam:
+    roscomvpn: [steam]
+
+  epic-games:
+    roscomvpn: [epicgames]
+    blackmatrix7: [Epic]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  riot:
+    roscomvpn: [riot]
+
+  pinterest:
+    roscomvpn: [pinterest]
+
+  torrent:
+    roscomvpn: [torrent]
+    codelab: [ruleset/torrent.yaml]
+    blackmatrix7: [1337x, Rarbg, PrivateTracker]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  netflix:
+    codelab: [ruleset/netflix.yaml]
+    blackmatrix7: [Netflix]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  socials:
+    codelab: [ruleset/socials.yaml]
+    blackmatrix7:
+      - LinkedIn
+      - Reddit
+      - Tumblr
+      - Snap
+      - Clubhouse
+      - TruthSocial
+      - 4chan
+      - Line
+      - KakaoTalk
+      - Patreon
+      - Pixiv
+      - Imgur
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  music:
+    codelab: [ruleset/music.yaml]
+    blackmatrix7: [SoundCloud, Pandora, Qobuz, LastFM, TIDAL, Deezer]
+    malw: [Spotify, Tidal, Deezer]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  tools:
+    codelab: [ruleset/tools.yaml]
+    blackmatrix7:
+      - GitLab
+      - Docker
+      - Npmjs
+      - Python
+      - Jetbrains
+      - Heroku
+      - Vercel
+      - Figma
+      - Atlassian
+      - Dropbox
+      - MEGA
+      - Adobe
+      - Jfrog
+      - HashiCorp
+      - Anaconda
+      - SourceForge
+      - Stackexchange
+      - Ubuntu
+      - SublimeText
+      - Salesforce
+      - Zendesk
+      - Zoho
+      - Shopify
+      - WIX
+      - Wordpress
+      - TeamViewer
+      - Synology
+      - LastPass
+      - Protonmail
+      - Duckduckgo
+      - Mozilla
+      - Opera
+      - Haveibeenpwned
+      - Slack
+      - Speedtest
+      - Emojipedia
+      - Notion
+    malw: [Notion, Canva, [Linear, Linear.app]]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  games:
+    codelab: [ruleset/games.yaml]
+    # Replaces the old EA / Blizzard / Ubisoft static providers, which pointed at
+    # classical files with behavior: domain. Xbox, PlayStation and Nintendo are
+    # left out until it is decided where console traffic should go.
+    blackmatrix7:
+      - Blizzard
+      - Battle
+      - Hearthstone
+      - Overwatch
+      - DiabloIII
+      - StarCraftII
+      - WorldofWarcraft
+      - HeroesoftheStorm
+      - EA
+      - Rockstar
+      - Gog
+      - Garena
+      - Ubisoft
+      - UBI
+      - 2KGames
+      - HoYoverse
+    roscomvpn: [escapefromtarkov, faceit]
+    itdog: [Services/roblox.lst]
+    malw: [Supercell]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  windsurf:
+    optional: true                 # section no longer exists in the MALW file
+    malw: ["?Windsurf"]
+
+  # Video streaming and TV with geo restrictions. Heavy traffic: do not select a limited relay node for it.
+  streaming:
+    blackmatrix7:
+      - Disney
+      - HBO
+      - Hulu
+      - AmazonPrimeVideo
+      - ParamountPlus
+      - Peacock
+      - DiscoveryPlus
+      - DAZN
+      - Vimeo
+      - Dailymotion
+      - Emby
+      - Fox
+      - CBS
+      - NBC
+      - ITV
+      - All4
+      - My5
+      - BritboxUK
+      - FuboTV
+      - Sling
+      - Espn
+    itdog: [Services/hdrezka.lst]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  # Hardware vendors (drivers and downloads).
+  vendors:
+    blackmatrix7: [Nvidia, Intel, AMD, Dell, HP, Cisco, Oracle, IBM, Qualcomm, Logitech, Razer, Gigabyte]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  # Exchanges and payments.
+  crypto:
+    blackmatrix7: [Binance, OKX, Cryptocurrency, Crypto, PayPal]
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  # Google session domains: one exit IP together with Gemini (target AI). See lists/google-core.txt.
+  google-core:
+    local: [google-core.txt]
+
+  # Large downloads of services that work without a VPN: DIRECT, ahead of apple / steam / epic-games.
+  bulk-direct:
+    local: [bulk-direct.txt]
+
+  # Video data of streaming services: DIRECT (see lists/bulk-direct-video.txt).
+  bulk-direct-video:
+    local: [bulk-direct-video.txt]
+
+  # Gemini web app and API: own group `Gemini` and own DNS resolver (see lists/gemini.txt).
+  gemini:
+    local: [gemini.txt]
+
+  # Google static assets and bulk downloads: DIRECT, ahead of google-core, to save proxy traffic.
+  google-bulk:
+    local: [google-bulk.txt]
+
+categories:
+  # Hosting providers (Hetzner, OVH, DigitalOcean, Cloudflare, AWS). The plain list is
+  # published as +.domain so sub-domains match too (a bare line in a `domain` provider is an exact match).
+  hodca:
+    itdog: [Categories/hodca.lst]
+  category-ads:
+    roscomvpn: [category-ads]
+
+  win-spy:
+    roscomvpn: [win-spy]
+
+  geoblock:
+    roscomvpn: [category-geoblock-ru]
+    itdog: [Categories/geoblock.lst]
+
+  block:
+    itdog: [Categories/block.lst]
+
+  news:
+    itdog: [Categories/news.lst]
+    blackmatrix7:
+      - CNN
+      - NYTimes
+      - Bloomberg
+      - ALJazeera
+      - VOA
+      - Huffpost
+      - ThomsonReuters
+      - Dailymail
+      - Voxmedia
+      - BBC
+      - PBS
+    exclude_domains:
+      blackmatrix7: *shared_infra
+
+  porn:
+    itdog: [Categories/porn.lst]
+    codelab: [ruleset/porno.yaml]
+
+  anime:
+    itdog: [Categories/anime.lst]
+
+  malw-block:
+    malw: [Блокировка]
+
+ip_categories:
+  discord:
+    itdog: [Subnets/IPv4/discord.lst]
+    codelab: [ruleset/discord-cidr.yaml]
+
+  telegram:
+    itdog: [Subnets/IPv4/telegram.lst]
+    codelab: [ruleset/telegram.yaml]
+
+  meta:
+    itdog: [Subnets/IPv4/meta.lst]
+
+  twitter:
+    itdog: [Subnets/IPv4/twitter.lst]
+
+  cloudflare:
+    itdog: [Subnets/IPv4/cloudflare.lst]
+
+  google-meet:
+    itdog: [Subnets/IPv4/google_meet.lst]

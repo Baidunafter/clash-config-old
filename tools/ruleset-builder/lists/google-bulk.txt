@@ -1,0 +1,16 @@
+# Google traffic that carries no session and can be large. Kept DIRECT, ahead of the
+# YouTube and google-core rules, so it never uses (or burns the quota of) a proxy node.
+# YouTube video (googlevideo.com, ytimg.com) is deliberately NOT here: it belongs to the
+# YouTube group.
+# Static assets and avatars (cookie-less; the exit IP does not matter)
+domain:gstatic.com
+domain:googleusercontent.com
+domain:ggpht.com
+# Chrome / Android / Play downloads and updates
+domain:dl.google.com
+domain:gvt1.com
+domain:gvt2.com
+domain:storage.googleapis.com
+domain:drive.usercontent.google.com
+# Android push (long-lived connection to mtalk.google.com and alt1..9-mtalk.google.com)
+keyword:mtalk.google.com

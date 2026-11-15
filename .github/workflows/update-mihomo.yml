@@ -1,0 +1,57 @@
+name: Update pinned Mihomo
+
+on:
+  schedule:
+    - cron: '41 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install -r tools/ruleset-builder/requirements.txt
+
+      - name: Look for a newer Mihomo release
+        id: bump
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/update_mihomo.py
+
+      - name: Open a pull request
+        if: steps.bump.outputs.updated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.bump.outputs.version }}
+          PREVIOUS: ${{ steps.bump.outputs.previous }}
+        run: |
+          set -euo pipefail
+          branch="chore/mihomo-${VERSION}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b "$branch"
+          git add settings/build.yaml
+          git commit -m "chore: bump Mihomo ${PREVIOUS} -> ${VERSION}"
+          git push --force -u origin "$branch"
+          if [ -n "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')" ]; then
+            echo "A pull request for $branch is already open."
+            exit 0
+          fi
+          if ! gh pr create --base main --head "$branch" \
+            --title "Bump Mihomo ${PREVIOUS} -> ${VERSION}" \
+            --body "Updates version, asset and SHA-256 in settings/build.yaml. Pull requests created with GITHUB_TOKEN do not start other workflows: run 'Update rulesets and Clash profiles' manually on this branch to validate the new binary before merging."; then
+            echo "::warning::Branch $branch was pushed, but GitHub Actions is not allowed to create pull requests. Open it manually: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/pull/new/$branch (or enable Settings -> Actions -> General -> 'Allow GitHub Actions to create and approve pull requests')."
+          fi

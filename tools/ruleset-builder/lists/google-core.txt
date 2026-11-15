@@ -1,0 +1,14 @@
+# Google domains that carry your Google session (cookies, tokens) or decide whether the
+# session looks suspicious. They must leave through the SAME exit IP as Gemini, otherwise
+# Google sees one account from two countries and shows "unusual traffic" (the sorry page).
+# Routed to the AI group (settings/rules.yaml): selecting one node there moves Gemini,
+# sign-in, search, mail, docs, Play and the rest of Google together.
+#
+# Not here, on purpose:
+#   * YouTube domains - the YouTube category (own group, earlier rule)
+#   * static assets and downloads - see google-bulk.txt (DIRECT, saves proxy traffic)
+domain:google.com
+domain:googleapis.com
+domain:recaptcha.net
+domain:notebooklm.google
+domain:labs.google

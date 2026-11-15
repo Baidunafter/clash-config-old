@@ -1,0 +1,16 @@
+# The Gemini web app and API. Own proxy group `Gemini` and its own DNS resolver (settings/dns.yaml,
+# gemini_resolver). Matched before google-bulk and google-core, so gemini.gstatic.com and the
+# hosts below are not swallowed by the broad Google rules.
+#
+# The rest of the Google session (accounts.google.com, www.google.com, apis.google.com, ...)
+# stays in google-core -> AI. If Gemini and sign-in leave from different addresses, Google may
+# show the "unusual traffic" page: keep both groups on the same node, or give google-core the
+# same resolver (see the note in settings/dns.yaml).
+domain:gemini.google.com
+domain:gemini.google
+domain:gemini.gstatic.com
+domain:bard.google.com
+domain:aistudio.google.com
+domain:makersuite.google.com
+domain:ai.google.dev
+domain:generativelanguage.googleapis.com

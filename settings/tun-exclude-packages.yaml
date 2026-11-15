@@ -1,0 +1,9 @@
+# Android apps that must NOT use the VPN at all (tun.exclude-package of every profile).
+#
+# This is stronger than a DIRECT rule: the app's traffic bypasses the TUN completely, so
+# it does not see an active VPN either (banking and government apps check for one).
+# Add one Android package name per line. Ignored on desktop.
+packages:
+  - com.gnivts.selfemployed    # Мой налог (самозанятые, ФНС)
+  - ru.rostel                  # Госуслуги
+  - com.programmisty.emiasapp  # ЕМИАС

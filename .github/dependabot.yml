@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Keeps action versions current (an alternative to hand-pinning commit SHAs).
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /tools/ruleset-builder
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /tools/config-builder
+    schedule:
+      interval: weekly

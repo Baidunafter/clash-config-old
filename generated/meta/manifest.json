@@ -1,0 +1,595 @@
+{
+  "domain": {
+    "ai": {
+      "classical": {
+        "file": "generated/classical/ai-classical.yaml",
+        "keywords": 4,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "57ca5113d0a1ac8dbc6db23a8b28c28709d661b22eae76c9e2be9a714ba2f0d2"
+      },
+      "domains": 198,
+      "excluded": 7,
+      "sha256": "ef4bd2884efbe9ae5763f03bd58c3e07607098ad97bf31b89aabc1d426c2d824",
+      "source_text": "generated/source/domain/ai.txt",
+      "sources": {
+        "blackmatrix7": 42,
+        "codelab": 93,
+        "itdog": 28,
+        "malw": 84,
+        "roscomvpn": 41
+      }
+    },
+    "anime": {
+      "domains": 42,
+      "sha256": "0f41ad01d1202495ae5b01cd64d18d6c716dedd4128a9ffb022f6380ef8db1b3",
+      "source_text": "generated/source/domain/anime.txt",
+      "sources": {
+        "itdog": 42
+      }
+    },
+    "apple": {
+      "domains": 92,
+      "sha256": "da0a538edc1f223ce3e7a3579a1bfa283635946dd980cc5399a0649f0e266477",
+      "source_text": "generated/source/domain/apple.txt",
+      "sources": {
+        "roscomvpn": 92
+      }
+    },
+    "block": {
+      "domains": 334,
+      "sha256": "9f97a74ae28a9448f30e2cab514e0104c7c6cec567e509288d34c53949f945ed",
+      "source_text": "generated/source/domain/block.txt",
+      "sources": {
+        "itdog": 334
+      }
+    },
+    "bulk-direct": {
+      "domains": 42,
+      "sha256": "9aa05249f8869d1e94c4acbfce8addca2ab859c5d726c474bddf8692b567e421",
+      "source_text": "generated/source/domain/bulk-direct.txt",
+      "sources": {
+        "local": 42
+      }
+    },
+    "bulk-direct-video": {
+      "domains": 1,
+      "sha256": "079bdb6f7bc85cee36162e97dc67767f3f362b798c207394496499e2365ca3ca",
+      "source_text": "generated/source/domain/bulk-direct-video.txt",
+      "sources": {
+        "local": 1
+      }
+    },
+    "category-ads": {
+      "domains": 2,
+      "sha256": "0b604ab3f8630e21e304004a44d7ff742fc5aca40af1c52d901f2573479c3ab2",
+      "source_text": "generated/source/domain/category-ads.txt",
+      "sources": {
+        "roscomvpn": 2
+      }
+    },
+    "cloudflare": {
+      "domains": 4,
+      "sha256": "e947b14af92ee1478eb97a7cc43a523afb42f4f7ac5d4177ad8e4d6d03a56243",
+      "source_text": "generated/source/domain/cloudflare.txt",
+      "sources": {
+        "itdog": 4
+      }
+    },
+    "crypto": {
+      "classical": {
+        "file": "generated/classical/crypto-classical.yaml",
+        "keywords": 5,
+        "processes": 3,
+        "regex": 0,
+        "sha256": "02cc9ad9388411bd801f7b9ee2ad2d7693bc70b52d6f2cd471e8370159a9202e"
+      },
+      "domains": 457,
+      "sha256": "9633843ceaf8af13275db00a997983cf05196bd46f6efad69a3d2bb08bd130d6",
+      "source_text": "generated/source/domain/crypto.txt",
+      "sources": {
+        "blackmatrix7": 457
+      }
+    },
+    "discord": {
+      "classical": {
+        "file": "generated/classical/discord-classical.yaml",
+        "keywords": 0,
+        "processes": 9,
+        "regex": 0,
+        "sha256": "9bfd2715dabc0e1180833f0a66b8a6ef3c5a142ad616cdf77248383925968d76"
+      },
+      "domains": 51,
+      "sha256": "f539f61f4b73617d1f0d747d1ba5f493cc4b5416f309f0854e8b4e2c435d1c24",
+      "source_text": "generated/source/domain/discord.txt",
+      "sources": {
+        "codelab": 51,
+        "itdog": 20
+      }
+    },
+    "epic-games": {
+      "domains": 28,
+      "sha256": "63040788c4031e6bf831eae793970134b287cc6c9f1eb008edbad4e8f0d678c4",
+      "source_text": "generated/source/domain/epic-games.txt",
+      "sources": {
+        "blackmatrix7": 15,
+        "roscomvpn": 27
+      }
+    },
+    "games": {
+      "domains": 274,
+      "sha256": "1c9e7e44da42c906a9a4b42cf49a3f3516638acb968df700cbde496d68f407f8",
+      "source_text": "generated/source/domain/games.txt",
+      "sources": {
+        "blackmatrix7": 250,
+        "codelab": 6,
+        "itdog": 4,
+        "malw": 8,
+        "roscomvpn": 6
+      }
+    },
+    "gemini": {
+      "domains": 8,
+      "sha256": "e58b211628d8d826bacf5c9338ab474a4e0dc62709ac95dc484c2f438aba672e",
+      "source_text": "generated/source/domain/gemini.txt",
+      "sources": {
+        "local": 8
+      }
+    },
+    "geoblock": {
+      "classical": {
+        "file": "generated/classical/geoblock-classical.yaml",
+        "keywords": 105,
+        "processes": 0,
+        "regex": 5,
+        "sha256": "237d015bced6cec43a45dad0835621e2161115c4209a1f1c4c1d4441e60b3aa3"
+      },
+      "domains": 960,
+      "sha256": "f33630a4f9b655be810f848963cf5e1a82f337914d470d9fbbe6cf5c1f390011",
+      "source_text": "generated/source/domain/geoblock.txt",
+      "sources": {
+        "itdog": 465,
+        "roscomvpn": 772
+      }
+    },
+    "github": {
+      "classical": {
+        "file": "generated/classical/github-classical.yaml",
+        "keywords": 0,
+        "processes": 0,
+        "regex": 1,
+        "sha256": "9c78823c04241d4dec7bb8da16e9b7f00491db8b2c502556df205a17ac045b50"
+      },
+      "domains": 30,
+      "sha256": "c8e4a1cf4835ea8a2d004aa4f252f807f2ee39fd24cbacb1b0f79ae3aa787f23",
+      "source_text": "generated/source/domain/github.txt",
+      "sources": {
+        "malw": 3,
+        "roscomvpn": 27
+      }
+    },
+    "google-bulk": {
+      "classical": {
+        "file": "generated/classical/google-bulk-classical.yaml",
+        "keywords": 1,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "1315c7fb255c0b33db78af3d28b5742836291372998a9eee3ceed39eecb79ab5"
+      },
+      "domains": 8,
+      "sha256": "cd5facfe5df6db8bba72565929e5eb0dbf76c26cba03c81762814dc0e51bc5f6",
+      "source_text": "generated/source/domain/google-bulk.txt",
+      "sources": {
+        "local": 8
+      }
+    },
+    "google-core": {
+      "domains": 5,
+      "sha256": "b0efcc02812b1a3da7cab0cd431ce8213c5d7691978a720c65f8b51fc1eb7988",
+      "source_text": "generated/source/domain/google-core.txt",
+      "sources": {
+        "local": 5
+      }
+    },
+    "hodca": {
+      "domains": 250,
+      "sha256": "795894624a6cdc6429bd3e2911460e8af8ed77d658c3d785b5a93656b4121198",
+      "source_text": "generated/source/domain/hodca.txt",
+      "sources": {
+        "itdog": 250
+      }
+    },
+    "malw-block": {
+      "domains": 222,
+      "sha256": "4fd7966a684e0a05d11a1588fca34a04b60236b249d2cf3c5f113c532d2f680b",
+      "source_text": "generated/source/domain/malw-block.txt",
+      "sources": {
+        "malw": 222
+      }
+    },
+    "meta": {
+      "classical": {
+        "file": "generated/classical/meta-classical.yaml",
+        "keywords": 6,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "429a617baa12a5ca00974928c19ebab9a7d67287f12d2715c26646c0d3d861ff"
+      },
+      "domains": 559,
+      "sha256": "5ba6b34b5e9a85ff72b89f84effbe6350fc9763c326b6a0d6a14df4fa03367dd",
+      "source_text": "generated/source/domain/meta.txt",
+      "sources": {
+        "blackmatrix7": 547,
+        "codelab": 42,
+        "itdog": 18
+      }
+    },
+    "microsoft": {
+      "domains": 72,
+      "sha256": "0904c6233e52a84b6f495fc46a5f80e4ba5c5ad097a3e9ea01beb27010e9a87a",
+      "source_text": "generated/source/domain/microsoft.txt",
+      "sources": {
+        "malw": 7,
+        "roscomvpn": 65
+      }
+    },
+    "music": {
+      "domains": 118,
+      "sha256": "3b23cd141d5b8107d2b5d849f0fd0ee475291d6419410c1e6c4755e2e6f5350b",
+      "source_text": "generated/source/domain/music.txt",
+      "sources": {
+        "blackmatrix7": 72,
+        "codelab": 27,
+        "malw": 27
+      }
+    },
+    "netflix": {
+      "classical": {
+        "file": "generated/classical/netflix-classical.yaml",
+        "keywords": 4,
+        "processes": 1,
+        "regex": 0,
+        "sha256": "a428484db1e85fcd794fc9189df4ad3b583e2959866eb12fafa99175230003c8"
+      },
+      "domains": 34,
+      "sha256": "dc21cd2151d0caffb684cac72559c1584e2a29757b52990c3d85e34103534bb4",
+      "source_text": "generated/source/domain/netflix.txt",
+      "sources": {
+        "blackmatrix7": 32,
+        "codelab": 26
+      }
+    },
+    "news": {
+      "classical": {
+        "file": "generated/classical/news-classical.yaml",
+        "keywords": 2,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "a448bc35309a7b2d77c19394a9f9fc26763cfa2d505d374a98abc4e6317eed10"
+      },
+      "domains": 389,
+      "sha256": "ab522d9b52701ef95586c1cfd97d3a2dde6a158361d5590c2689a082298d0a3f",
+      "source_text": "generated/source/domain/news.txt",
+      "sources": {
+        "blackmatrix7": 210,
+        "itdog": 184
+      }
+    },
+    "pinterest": {
+      "domains": 50,
+      "sha256": "190fa32629796a31b56bd42b130ae5a07f05a987c915ec2d7e600757d0086f7d",
+      "source_text": "generated/source/domain/pinterest.txt",
+      "sources": {
+        "roscomvpn": 50
+      }
+    },
+    "porn": {
+      "domains": 64,
+      "sha256": "beef378a32a0ba21fee33bb2da012bf0c4d149ac36c08512cb443e0584493733",
+      "source_text": "generated/source/domain/porn.txt",
+      "sources": {
+        "codelab": 30,
+        "itdog": 51
+      }
+    },
+    "riot": {
+      "domains": 54,
+      "sha256": "b7261fc009609dc80e55035454d6af17771348eafd9b3dcf263691e66212c2a0",
+      "source_text": "generated/source/domain/riot.txt",
+      "sources": {
+        "roscomvpn": 54
+      }
+    },
+    "socials": {
+      "domains": 94,
+      "sha256": "97b1e8cfa524e9ccc8106f4a2c91a24ae9becd23716cea5e0373a1ac8d3060e4",
+      "source_text": "generated/source/domain/socials.txt",
+      "sources": {
+        "blackmatrix7": 70,
+        "codelab": 33
+      }
+    },
+    "steam": {
+      "domains": 41,
+      "sha256": "2447814ed71cb00556e88b646bc06574d2b01256455aaf85f49ce158c013aabd",
+      "source_text": "generated/source/domain/steam.txt",
+      "sources": {
+        "roscomvpn": 41
+      }
+    },
+    "streaming": {
+      "classical": {
+        "file": "generated/classical/streaming-classical.yaml",
+        "keywords": 6,
+        "processes": 8,
+        "regex": 0,
+        "sha256": "141eb304ed5726082878346949d875819c75829b8ee422f7a08e3188e6fcd2d3"
+      },
+      "domains": 747,
+      "excluded": 3,
+      "sha256": "eeb8df9a8fc1c24429cbbebc87ffbfc7fc13a9ed0c20401abc9ba413dac1877f",
+      "source_text": "generated/source/domain/streaming.txt",
+      "sources": {
+        "blackmatrix7": 730,
+        "itdog": 17
+      }
+    },
+    "telegram": {
+      "domains": 27,
+      "sha256": "3a80f272a6c2f1ce517d32e7f898105398a3601d7390f4bcf304c7397c848833",
+      "source_text": "generated/source/domain/telegram.txt",
+      "sources": {
+        "codelab": 27,
+        "itdog": 20,
+        "roscomvpn": 26
+      }
+    },
+    "tiktok": {
+      "classical": {
+        "file": "generated/classical/tiktok-classical.yaml",
+        "keywords": 4,
+        "processes": 1,
+        "regex": 0,
+        "sha256": "13f4d8a75799bac6dba0c1ef476f3fd7ba84a6d16d3b026d040c1e94c5dce125"
+      },
+      "domains": 42,
+      "sha256": "cd6e15aaacc8cf905a337325557cb6d2c61d455a5e09676353bb2edaf8b491a8",
+      "source_text": "generated/source/domain/tiktok.txt",
+      "sources": {
+        "codelab": 39,
+        "itdog": 16
+      }
+    },
+    "tools": {
+      "classical": {
+        "file": "generated/classical/tools-classical.yaml",
+        "keywords": 3,
+        "processes": 2,
+        "regex": 0,
+        "sha256": "c214b9b2794953d29a6cd230cd97119827de24140657d8388241af0dab05e6c5"
+      },
+      "domains": 603,
+      "sha256": "99faf1a0fd6b7eae23357f950961ef89247f49084bf1ba38df7c84329ba6de24",
+      "source_text": "generated/source/domain/tools.txt",
+      "sources": {
+        "blackmatrix7": 519,
+        "codelab": 81,
+        "malw": 13
+      }
+    },
+    "torrent": {
+      "classical": {
+        "file": "generated/classical/torrent-classical.yaml",
+        "keywords": 4,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "85ff6958c9f7bb46777d230500ab78cb4312ea370f6d4ac76f86bbec9484cd34"
+      },
+      "domains": 666,
+      "sha256": "030068e6289726fdc95a53647c9fa267fed71ee777e461e4358cfcdaba76fbe2",
+      "source_text": "generated/source/domain/torrent.txt",
+      "sources": {
+        "blackmatrix7": 273,
+        "codelab": 28,
+        "roscomvpn": 431
+      }
+    },
+    "twitch": {
+      "domains": 42,
+      "sha256": "e39a4d87f1ff8292e5f4109898b0308189df5a686709ed32d7957f2bd4e55f5d",
+      "source_text": "generated/source/domain/twitch.txt",
+      "sources": {
+        "malw": 2,
+        "roscomvpn": 40
+      }
+    },
+    "twitch-ads": {
+      "domains": 5,
+      "sha256": "1c774a43019c56371c9c6edd3a847c081d105169d4f5bbd95098581c6cfb427b",
+      "source_text": "generated/source/domain/twitch-ads.txt",
+      "sources": {
+        "roscomvpn": 5
+      }
+    },
+    "twitter": {
+      "classical": {
+        "file": "generated/classical/twitter-classical.yaml",
+        "keywords": 1,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "11f6f33ebd649005fc59d0e4fb1e52aaff0eb875b06c7b6d11e5c980ba58dc2f"
+      },
+      "domains": 23,
+      "sha256": "b6a10900fb5453d19e7d2579aa78f1c7e9237ba921390be4b9e59a1eb3e74a6f",
+      "source_text": "generated/source/domain/twitter.txt",
+      "sources": {
+        "codelab": 4,
+        "itdog": 23
+      }
+    },
+    "vendors": {
+      "domains": 662,
+      "sha256": "910b81bcf77cd4cab937ad6e66233d6e1f5a03ec7e3f133c64625b60791d80a3",
+      "source_text": "generated/source/domain/vendors.txt",
+      "sources": {
+        "blackmatrix7": 662
+      }
+    },
+    "win-spy": {
+      "domains": 376,
+      "sha256": "ef83021ce3a116a8c2bb30d259963f3061c7f4a71e17d3a4f5f90abbf3d11a24",
+      "source_text": "generated/source/domain/win-spy.txt",
+      "sources": {
+        "roscomvpn": 376
+      }
+    },
+    "youtube": {
+      "classical": {
+        "file": "generated/classical/youtube-classical.yaml",
+        "keywords": 1,
+        "processes": 0,
+        "regex": 0,
+        "sha256": "0569a3594696568863e8a369e38d8bd031f36fe9e72685f620839c6de696d057"
+      },
+      "domains": 191,
+      "sha256": "6809babc6ad19aa65410d5299baf561dec855c3ed071248a462fa50de68bbd1f",
+      "source_text": "generated/source/domain/youtube.txt",
+      "sources": {
+        "codelab": 188,
+        "itdog": 18,
+        "roscomvpn": 176
+      }
+    }
+  },
+  "generator": "tools/ruleset-builder/build.py",
+  "ip": {
+    "cloudflare": {
+      "cidrs": 15,
+      "sha256": "8d8f26a7a52fe15b563eb65955f21eb2d7373765bb33b49379a8ecb61a9d2169",
+      "source_text": "generated/source/ip/cloudflare.txt",
+      "sources": {
+        "itdog": 15
+      }
+    },
+    "discord": {
+      "cidrs": 81,
+      "sha256": "d0f39282311b8c3885e8cb5c64540cae07ac0bd4e209f4ab237e137aee84267d",
+      "source_text": "generated/source/ip/discord.txt",
+      "sources": {
+        "codelab": 81,
+        "itdog": 10
+      }
+    },
+    "google-meet": {
+      "cidrs": 3,
+      "sha256": "f48e11ac5057338d1ab4986d38c02d3b78ff359899b86969cdab4669ef44f68f",
+      "source_text": "generated/source/ip/google-meet.txt",
+      "sources": {
+        "itdog": 3
+      }
+    },
+    "meta": {
+      "cidrs": 80,
+      "sha256": "6cd6b7fda7e411ac7e002d1d47113e09cb797d5374cd1d9aa57cca8d5c92814f",
+      "source_text": "generated/source/ip/meta.txt",
+      "sources": {
+        "itdog": 80
+      }
+    },
+    "telegram": {
+      "cidrs": 16,
+      "sha256": "848cebd318c8afe28294e8794e20d78b584645bb957b8c59fecb7012ff2d837a",
+      "source_text": "generated/source/ip/telegram.txt",
+      "sources": {
+        "codelab": 13,
+        "itdog": 10
+      }
+    },
+    "twitter": {
+      "cidrs": 10,
+      "sha256": "62f5568ef308d6915f50b803e20211ecb52af63527b1e7f7b6f570e29c2c2551",
+      "source_text": "generated/source/ip/twitter.txt",
+      "sources": {
+        "itdog": 10
+      }
+    }
+  },
+  "malw_last_update": "02 ноября 2026",
+  "malw_sections": {
+    "Canva": 3,
+    "Claude": 5,
+    "DeepL": 21,
+    "Deezer": 3,
+    "Dyson": 3,
+    "ElevenLabs": 5,
+    "GitHub Copilot": 3,
+    "Google": 22,
+    "Grok": 3,
+    "Imgur": 1,
+    "JetBrains": 5,
+    "Linear": 7,
+    "Microsoft": 7,
+    "NVIDIA": 1,
+    "Notion": 3,
+    "OpenAI": 21,
+    "Parsec": 1,
+    "Patreon": 2,
+    "Spotify": 13,
+    "Supercell": 8,
+    "Tidal": 11,
+    "TikTok": 1,
+    "Truth Social": 2,
+    "Twitch": 2,
+    "Weather.com": 2,
+    "Web Archive": 1,
+    "Блокировка": 222
+  },
+  "mirror": {
+    "category-ru": {
+      "bytes": 658,
+      "file": "generated/mirror/category-ru.mrs",
+      "sha256": "10adb441aaec7971b7414f143724d91e56b645e2b83f3eabfb008136872eb01c",
+      "source": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geosite/master/release/mihomo/category-ru.mrs"
+    },
+    "direct-ips": {
+      "bytes": 96660,
+      "file": "generated/mirror/direct-ips.mrs",
+      "sha256": "e3bbb9fe89b88c66b630a68cfae2a73497b1b4ce558f608935ea97ac4e4b0a63",
+      "source": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/master/release/mihomo/direct.mrs"
+    },
+    "private-domains": {
+      "bytes": 720,
+      "file": "generated/mirror/private-domains.mrs",
+      "sha256": "d604dcae99dfcf3ad5968c89107affa5c6edbc2944fb7ca469d5ccca89bd393b",
+      "source": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geosite/master/release/mihomo/private.mrs"
+    },
+    "private-ips": {
+      "bytes": 234,
+      "file": "generated/mirror/private-ips.mrs",
+      "sha256": "81092d293b6b586897960d3f83f6e9a7789aafa13707aa5a952f5047244b06c0",
+      "source": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/master/release/mihomo/private.mrs"
+    },
+    "ru-apps": {
+      "bytes": 10900,
+      "file": "generated/mirror/ru-apps.yaml",
+      "sha256": "cf532e2f55839ac82cb2556a8f69a9a2c0db564d72bb7207a3c5b6b3185d8a24",
+      "source": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/ru-apps.yaml"
+    },
+    "whitelist": {
+      "bytes": 3683,
+      "file": "generated/mirror/whitelist.mrs",
+      "sha256": "e3a6d71c93a7083eea82316deb1c08e7121a85f16376e948a0870a4cc7609379",
+      "source": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geosite/master/release/mihomo/whitelist.mrs"
+    },
+    "whitelist-ips": {
+      "bytes": 9763,
+      "file": "generated/mirror/whitelist-ips.mrs",
+      "sha256": "ccc47272910dd084abfedca037efedac8e68a8a84e24af9273f926da4f7b5e28",
+      "source": "https://raw.githubusercontent.com/hydraponique/roscomvpn-geoip/master/release/mihomo/whitelist.mrs"
+    }
+  },
+  "skipped_optional": [
+    "windsurf"
+  ],
+  "source_check_interval_hours": 24
+}

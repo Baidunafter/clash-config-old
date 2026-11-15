@@ -1,0 +1,83 @@
+# Shared DNS policy for desktop and Android profiles.
+#
+# DNS over HTTPS only: no plain DNS anywhere, bootstrap included (build_profiles.py enforces it,
+# and rejects `fallback`).
+#
+# doh_provider names the resolvers of every group except Gemini. With several names Mihomo
+# sends each query to ALL of them in parallel and uses the first answer, so every resolver sees
+# every query; list one name for a single resolver. The same servers are written into the `dns`
+# of every WARP node (names of proxied connections are resolved inside the tunnel) and are used
+# for the host names of the proxy servers.
+doh_provider: [cloudflare, google]
+
+providers:
+  cloudflare: {doh: 'https://cloudflare-dns.com/dns-query', bootstrap: 'https://1.1.1.1/dns-query'}
+  google:     {doh: 'https://dns.google/dns-query',         bootstrap: 'https://8.8.8.8/dns-query'}
+  quad9:      {doh: 'https://dns.quad9.net/dns-query',      bootstrap: 'https://9.9.9.9/dns-query'}
+  adguard:    {doh: 'https://dns.adguard-dns.com/dns-query', bootstrap: 'https://94.140.14.14/dns-query'}
+  # Rerouting resolver: for blocked services it returns the address of its own proxy server.
+  # No bootstrap: its host name is resolved by the main resolvers. Used only by Gemini.
+  xbox:       {doh: 'https://xbox-dns.ru/dns-query'}
+
+# Resolver used for Russian services (nameserver-policy below).
+# `main` = the doh_provider list; or a provider name from the list.
+ru_resolver: main
+
+# Gemini has its own resolver (a provider name above; remove the line to switch it off).
+# A proxy group cannot carry a DNS server in Mihomo, so this works in two places:
+#  * nameserver-policy 'rule-set:gemini': the domains of the `gemini` category are resolved by it
+#    whenever Mihomo resolves them itself (group Gemini = "Без VPN"),
+#  * the group Gemini also offers copies of every node named "[GM] ..." whose own `dns` is this
+#    resolver, because a node resolves names through its own `dns` inside the tunnel.
+# To give the whole Google session the same resolver, add google-core:
+#   'rule-set:gemini,google-core'
+gemini_resolver: xbox
+
+# $DOH, $BOOTSTRAP, $RU_DNS and $GEMINI_DNS are replaced with the URLs of the chosen providers
+# (a placeholder inside a list expands to every server).
+dns:
+  enable: true
+  use-hosts: false
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+
+  # Only used to resolve the host name of the DoH endpoints (itself DoH, by IP).
+  default-nameserver:
+    - $BOOTSTRAP
+
+  nameserver:
+    - $DOH
+
+  proxy-server-nameserver:
+    - $DOH
+
+  nameserver-policy:
+    'rule-set:gemini':
+      - $GEMINI_DNS
+    # Placeholder for a separate resolver for Russian services; currently the same as the
+    # main ones. Change ru_resolver to give them a different DoH server.
+    'rule-set:category-ru,whitelist,private-domains':
+      - $RU_DNS
+
+  # Names that need their real address (connectivity checks, time, STUN/P2P).
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - 'localhost'
+    - '*.localhost'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'ntp.*.com'
+    - '+.pool.ntp.org'
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - 'xbox.*.microsoft.com'
+    - '+.xboxlive.com'
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
